@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title> Titulo da pagina </title>
+	</head>
+	<body style="background-image: url('https://www.significadofacil.com/wp-content/uploads/2019/07/background.jpg');">
+
+		<h1> Este e um titulo</h1>
+		<p> Este e um paragrafo </p>
+		<p> Este e outro paragrafo </p>
+		<p style="background-color:blue; style=font-size:350'%;"> <b> Em negrito </b> </p>
+		<p style="background-color:#00ff00; style=font-size:250px;"> <i> Em italico </i> </p>
+		<p style="background-color:rgb(102,204, 255);"> <sup> Sobrescrito </sup></p>
+		<p style="text-align:center;" > <sub> Subscrito </sub> </p>
+		<p style="text-align:right;"> <mark> Marcado </mark> </p>
+
+
+
+		<ul>
+			<li> Item 1 </li>
+			<ul style="list-style-type:square;">
+				<li> Coffee </li>
+				<li> Tea </li>
+				<li> Milk </li>
+			</ul>
+			<li> Item 2</li>
+			<ol start="5">
+				<li> Coffee </li>
+				<li> Tea </li>
+				<li> Milk </li>	
+			</ol>
+			<li> Item 3</li>
+			<ol type="a">
+				<li> Coffee </li>
+				<li> Tea </li>
+				<li> Milk </li>
+			</ol>
+			<li> Item 4</li>
+			<ol type="i">
+				<li> Coffee </li>
+				<li> Tea </li>
+				<li> Milk </li>
+			</ol>
+			<li>       
+				<a href="https://www.google.com/">
+				<img alt="Qries" src="https://www.qries.com/images/banner_logo.png"> 
+			</li>
+
+		</ul>
+		
+	</body>
+</html>
