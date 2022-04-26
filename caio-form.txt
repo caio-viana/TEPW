@@ -7,8 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+	<style>
+ 		.veiculo{
+    	margin-left:25px;
+ 		}
+	</style>
   </head>
   <body>
 
@@ -17,6 +20,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+ <!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 
 <ul class="nav">
   <li class="nav-item">
@@ -26,12 +33,10 @@
     <a class="nav-link" href="#">Propriedades</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">V�nculos</a>
+    <a class="nav-link" href="#">Vínculos</a>
   </li>
 </ul>
-
-<form>
-	<div class="form-group">
+	<div class="dados_cadastrais">
   		<label for="usr">Nome:</label>
   		<input type="text" class="form-control" id="nome">
   		<label for="usr">CPF:</label>
@@ -45,7 +50,119 @@
 		<div class="radio">
 			<label><input type="radio" name="sexo">F</label>
         </div>
+       	<label class="control-label" for="date">Data de nascimento</label>
+        <input type ='date' class="form-control" id="date" name="date">
+        <label for="nomePai">Nome do pai</label>
+        <input type="text" class="form-control" id="nomePai">
+        <label for="nomeMae">Nome da mãe</label>
+        <input type="text" class="form-control" id="nomeMae">
+        <label for="nomePai">Nome do pai</label>
+        <input type="text" class="form-control" id="nomePai">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Estado Civil<span class="caret"></span></button><br>
+    <ul class="dropdown-menu">
+      <li><a href="#">Casado</a></li>
+      <li><a href="#">Solteiro</a></li>
+      <li><a href="#">Viúvoes</a></li>
+      <li><a href="#">Separado</a></li>
+      <li><a href="#">Divorciado</a></li>
+    </ul>
+    <label for="naturalidade">Naturalidade</label>
+    <input type="text" class="form-control" id="naturalidade">
+    <label for="nacionalidade">Nacionalidade</label>
+    <input type="text" class="form-control" id="nacionalidade">
+   	<label for="telefoneRes">Telefone residencial</label><br>
+  	<input type="tel" id="telefoneRes" name="telefoneRes"><br>
+    <label for="telefoneCel">Telefone celular</label><br>
+  	<input type="tel" id="telefoneCel" name="telefoneCel"><br>
+    <label for="logradouro">Logradouro</label><br>
+    <input type="text"  id="logradouro"><br>
+    <label for="numero">Número</label><br>
+  	<input type="number" id="numero" name="numero"><br>
+    <label for="complemento">Complemento</label><br>
+  	<input type="text" id="complemento" name="complemento"><br>
+    <label for="cep">CEP</label><br>
+  	<input type="number" id="cep" name="cep"><br>
+    <label for="bairro">Bairro</label><br>
+  	<input type="text" id="bairro" name="bairro"><br>
+    <label for="cidade">Cidade</label><br>
+  	<input type="text" id="cidade" name="cidade"><br>
+    <label for="estado">Estado</label><br>
+  	<input type="text" id="estado" name="estado"><br>
+    <label for="pais">País</label><br>
+  	<input type="text" id="pais" name="pais"><br><br><br>
 	</div>
-</form>    
+    
+    <div class='propriedades'>
+    	<h3>Veículo</h3>
+        <label for="marca" class='veiculo'>Marca</label>
+        <input type="text" id="marca"><br>
+        <label for="modelo" class='veiculo'>Modelo</label>
+        <input type="text" id="modelo"><br>
+        <label for="tipo" class='veiculo'>Tipo</label>
+        <input type="text" id="tipo"><br>
+        <label for="placa" class='veiculo'>Placa</label>
+        <input type="number" id="placa"><br>
+        
+        <h3>Imóveis</h3> <!editar id's>
+        <label for="logradouroP">Número</label><br>
+        <input type="text"  id="logradouroP"><br>
+    	<label for="numeroP">Número</label><br>
+  		<input type="number" id="numeroP" name="numeroP"><br>
+   		<label for="complemento">Complemento</label><br>
+  		<input type="text" id="complemento" name="complemento"><br>
+    	<label for="cep">CEP</label><br>
+  		<input type="number" id="cep" name="cep"><br>
+    	<label for="bairro">Bairro</label><br>
+  		<input type="text" id="bairro" name="bairro"><br>
+    	<label for="cidade">Cidade</label><br>
+  		<input type="text" id="cidade" name="cidade"><br>
+    	<label for="estado">Estado</label><br>
+  		<input type="text" id="estado" name="estado"><br>
+    	<label for="pais">País</label><br>
+  		<input type="text" id="pais" name="pais"><br><br>
+        
+        <h3>Conta bancária</h3>
+        <label for="banco" class='veiculo'>Banco</label>
+        <input type="text" id="banco"><br>
+        <label for="agencia" class='veiculo'>Agência</label>
+        <input type="number" id="agencia"><br>
+        <label for="operacao" class='veiculo'>Operação</label>
+        <input type="number" id="operacao"><br>
+        <label for="numero" class='veiculo'>Número</label>
+        <input type="number" id="numero"><br>
+        <label for="tipo" class='veiculo'>Tipo</label>
+        <input type="text" id="tipo"><br>
+        
+    </div>
+    
+    <div class='vinculo'>
+    	<h3>Último emprego</h3>
+    	<label for="ano" class='veiculo'>Ano</label>
+        <input type="number" id="ano"><br>
+        <label for="cnpj" class='veiculo'>CNPJ</label>
+        <input type="number" id="cnpj"><br>
+        <label for="razaoSocial" class='veiculo'>Razão social</label>
+        <input type="text" id="razaoSocial"><br>
+        <label for="ocupacao" class='veiculo'>Ocupação</label>
+        <input type="text" id="ocupacao"><br>
+        <label for="horas" class='veiculo'>Quantiade de horas</label>
+        <input type="number" id="horas"><br>
+        <label for="admissao"  class='veiculo'>Data de admissão</label>
+        <input type ='date'  id="admissao"><br>
+        <label for="desligamento"  class='veiculo'>Data de desligamento</label>
+        <input type ='date'  id="desligamento"><br>
+        <label for="sBruto" class='veiculo'>Salário bruto</label>
+        <input type="number" id="sBruto"><br>
+        <label for="sLiquido" class='veiculo'>Salário líquido</label>
+        <input type="number" id="sLiquido"><br><br>
+        
+        <h3>Participação societária</h3>
+        <label for="razaoSocialPS" class='veiculo'>Razão Social</label>
+        <input type="text" id="razaoSocialPS"><br>
+        <label for="cnpjPS" class='veiculo'>CNPJ</label>
+        <input type="number" id="cnpjPS"><br>
+    </div>
+    
+    
   </body>
 </html>
