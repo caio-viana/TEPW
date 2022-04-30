@@ -161,8 +161,30 @@
         <input type="text" id="razaoSocialPS"><br>
         <label for="cnpjPS" class='veiculo'>CNPJ</label>
         <input type="number" id="cnpjPS"><br>
+        <label for="qualifSocio" class='veiculo'>Qualificação sócio</label>
+        <input type="text" id="qualifSocio"><br>
+        <label for="dataEntrada" class='veiculo'>Data de entrada sociedade</label>
+        <input type="date" id="dataEntrada"><br>
+        <label for="dataSaida" class='veiculo'>Data de saída sociedade</label>
+        <input type="date" id="dataSaida"><br>
+        <label for="capital" class='veiculo'>Capital</label>
+        <input type="number" id="capital"><br>
     </div>
     
+<button type="button" onclick="loadDoc()">Enviar</button>
     
+    
+<script>
+  function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("demo").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "ajax_info.txt");
+  xhttp.send();
+}
+    
+</script>
   </body>
 </html>
