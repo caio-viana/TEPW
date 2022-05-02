@@ -108,18 +108,18 @@
         <input type="text"  class='campo' id="logradouroP"><br>
     	<label for="numeroP">Número</label><br>
   		<input type="number" class='campo' id="numeroP" name="numeroP"><br>
-   		<label for="complemento">Complemento</label><br>
-  		<input type="text" class='campo' id="complemento" name="complemento"><br>
-    	<label for="cep">CEP</label><br>
-  		<input type="number" class='campo' id="cep" name="cep"><br>
-    	<label for="bairro">Bairro</label><br>
-  		<input type="text" class='campo' id="bairro" name="bairro"><br>
-    	<label for="cidade">Cidade</label><br>
-  		<input type="text" class='campo' id="cidade" name="cidade"><br>
-    	<label for="estado">Estado</label><br>
-  		<input type="text" class='campo' id="estado" name="estado"><br>
-    	<label for="pais">País</label><br>
-  		<input type="text" class='campo' id="pais" name="pais"><br><br>
+   		<label for="complementoP">Complemento</label><br>
+  		<input type="text" class='campo' id="complementoP" name="complemento"><br>
+    	<label for="cepP">CEP</label><br>
+  		<input type="number" class='campo' id="cepP" name="cep"><br>
+    	<label for="bairroP">Bairro</label><br>
+  		<input type="text" class='campo' id="bairroP" name="bairro"><br>
+    	<label for="cidadeP">Cidade</label><br>
+  		<input type="text" class='campo' id="cidadeP" name="cidade"><br>
+    	<label for="estadoP">Estado</label><br>
+  		<input type="text" class='campo' id="estadoP" name="estado"><br>
+    	<label for="paisP">País</label><br>
+  		<input type="text" class='campo' id="paisP" name="pais"><br><br>
         
         <h3>Conta bancária</h3>
         <label for="banco"  >Banco</label>
