@@ -24,16 +24,17 @@
 
 <ul class="nav">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Dados Cadastrais</a>
+    <a class="nav-link " data-toggle='tab' aria-current="page" href="#dadosCadastrais">Dados Cadastrais</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Propriedades</a>
+    <a class="nav-link" data-toggle='tab' aria-current="page" href="#propriedades">Propriedades</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#vinculo">Vínculos</a>
+    <a class="nav-link" data-toggle='tab' aria-current="page" href="#vinculo">Vínculos</a>
   </li>
 </ul>
-	<div class="dados_cadastrais">
+	<div class='tab-content'>
+	<div id="dadosCadastrais">
   		<label for="usr">Nome:</label><br>
   		<input type="text"    class='campo' id="nome"><br>
   		<label for="usr">CPF:</label><br>
@@ -88,8 +89,10 @@
     <label for="pais">País</label><br>
   	<input type="text" class='campo' id="pais" name="pais"><br><br><br>
 	</div>
+    </div>
     
-    <div class='propriedades'>
+    <div class='tab-content'>
+    <div id='propriedades'>
     	<h3>Veículo</h3>
         <label for="marca"  >Marca</label>
         <input type="text" class='campo' id="marca"><br>
@@ -129,10 +132,10 @@
         <input type="number" class='campo' id="numero"><br>
         <label for="tipo"  >Tipo</label>
         <input type="text" class='campo' id="tipo"><br>
-        
+    </div>    
     </div>
     
-    <div class='vinculo'>
+    <div class='tab-content' id='vinculo'>
     	<h3>Último emprego</h3>
     	<label for="ano"  >Ano</label>
         <input type="number" class='campo' id="ano"><br>
