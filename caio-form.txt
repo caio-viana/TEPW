@@ -171,23 +171,32 @@
         <input type="number" class='campo' id="capital"><br>
     </div>
     
+    <div id='resultado'>
+    teste
+	</div>
+    
+    
 <button type="button" onclick="loadDoc()">Enviar</button>
     
     
 <script>
-	let campos = document.getElementsByClassName('campo');
-
-
+    
+	
 
   function loadDoc() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("demo").innerHTML =
-    this.responseText;
-  }
-  xhttp.open("GET", "ajax_info.txt");
-  xhttp.send();
+  const campos = document.getElementsByClassName('campo')
+  document.getElementById('resultado').innerHTML = campos;
+  
+    const xhttp = new XMLHttpRequest();
+  	xhttp.onload = function() {
+    document.getElementById("demo").innerHTML = this.responseText;
+    }
+  	xhttp.open("POST", "demo_post.asp");
+  	xhttp.send();
 }
+  
+ }
+  
     
 </script>
   </body>
