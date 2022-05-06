@@ -1,0 +1,7 @@
+bootstrap automatizar ajuste na tela
+js teoria primeiros slides
+js + bootstrap primeiros slides
+concatenação js
+uso de imagens estilizado boostrap
+criar objeto js olhar exercício
+fazer loop para array
