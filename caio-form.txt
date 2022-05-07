@@ -43,20 +43,20 @@
   		<input type="text"    class='campo' id="identidade"><br>
 		<label for="sexo">Sexo:</label>
         <div class="radio">
-			<label><input type="radio" name="sexo" checked>M</label>
+			<label><input type="radio" name="sexo" id ='sexo'checked>M</label>
 		</div>
 		<div class="radio">
-			<label><input type="radio" name="sexo">F</label>
+			<label><input type="radio" id ='sexo' name="sexo">F</label>
         </div>
        	<label  for="date">Data de nascimento</label><br>
-        <input type ='date'    class='campo' id="date" name="date"><br>
+        <input type ='date'    class='campo' id="dateNasc" name="dateNasc"><br>
         <label for="nomePai">Nome do pai</label><br>
         <input type="text"    class='campo' id="nomePai"><br>
         <label for="nomeMae">Nome da mãe</label><br>
         <input type="text"    class='campo' id="nomeMae"><br>
         <label for="nomePai">Nome do pai</label><br>
         <input type="text"    class='campo' id="nomePai"><br>
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Estado Civil<span class="caret"></span></button><br>
+        <button class="btn btn-primary dropdown-toggle" id='estCivil'type="button" data-toggle="dropdown">Estado Civil<span class="caret"></span></button><br>
     <ul class="dropdown-menu">
       <li><a href="#">Casado</a></li>
       <li><a href="#">Solteiro</a></li>
@@ -103,7 +103,7 @@
         <label for="placa"  >Placa</label>
         <input type="number" class='campo' id="placa"><br>
         
-        <h3>Imóveis</h3> <!editar id's>
+        <h3>Imóveis</h3>
         <label for="logradouroP">Número</label><br>
         <input type="text"  class='campo' id="logradouroP"><br>
     	<label for="numeroP">Número</label><br>
@@ -172,7 +172,7 @@
     </div>
     
     <div id='resultado'>
-    teste
+   <p id='teste'> teste </p/
 	</div>
     
     
@@ -181,21 +181,23 @@
     
 <script>
     
-	
-
+    
+  !*use https://adminlte.io/ to stylize  
   function loadDoc() {
-  const campos = document.getElementsByClassName('campo')
-  document.getElementById('resultado').innerHTML = campos;
-  
-    const xhttp = new XMLHttpRequest();
-  	xhttp.onload = function() {
-    document.getElementById("demo").innerHTML = this.responseText;
-    }
-  	xhttp.open("POST", "demo_post.asp");
-  	xhttp.send();
-}
-  
- }
+   var nome = document.getElementById("nome").value;
+   var cpf = document.getElementById("cpf").value;
+   var identidade = document.getElementById("identidade").value;
+   var sexo = document.getElementById("sexo").value;
+   var dateNasc = document.getElementById("dateNasc").value;
+	  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("resultado").innerHTML = this.responseText;
+  }
+  xhttp.open("POST", "https://www.w3schools.com/action_page.php");
+  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhttp.send("nome="+nome+' cpf='+cpf+' identidade=' + identidade +' sexo=' + sexo +' date='+dateNasc);
+
+	}
   
     
 </script>
