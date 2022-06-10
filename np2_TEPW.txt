@@ -1,7 +1,9 @@
-bootstrap automatizar ajuste na tela
-js teoria primeiros slides
-js + bootstrap primeiros slides
-concatena��o js
-uso de imagens estilizado boostrap
-criar objeto js olhar exerc�cio
-fazer loop para array
+tres primeiras de marcar 
+1 - mysql teórico
+2 - php teórico
+
+soma de variáveis
+comentário
+loop
+criar função
+condicional
