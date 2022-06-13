@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function fazer_requsicao2(){
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    document.getElementById("texto_resultado").innerHTML = this.responseText;
+                }
+            }	
+            email = document.getElementById("email").value;
+            senha = document.getElementById("senha").value;
+            xmlhttp.open("GET", "proc_login.php?email=" + email+"&senha="+ senha, true);
+              xmlhttp.send();
+        }
+        </script>
+</head>
+<body>
+<div class="container-fluid p-5 bg-primary text-white text-center">
+    <form>
+        
+        <div class="form-outline mb-4">
+          <input type="email" id="email" class="form-control" />
+          <label class="form-label" for="email">Email</label>
+        </div>
+      
+      
+        <div class="form-outline mb-4">
+          <input type="password" id="senha" class="form-control" />
+          <label class="form-label" for="senha">Senha</label>
+        </div>
+      
+
+
+        <button type="button" onclick="fazer_requsicao2()" class="btn btn-primary btn-block mb-4">Login</button>
+      
+      </form>
+</div>
+<p>Resutado: <div id="texto_resultado"></div></p>
+
+</body>
+</html>
+
+
