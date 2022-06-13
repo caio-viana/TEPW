@@ -23,9 +23,13 @@ function fazer_requsicao(){
 	xmlhttp.open("GET", "proc_cadastro.php?nome="+nome + "&email=" + email+ "&senha="+ senha, true);
   	xmlhttp.send();
 }
+
+
+
 </script>
 </head>
 <div class="container-fluid p-5 bg-primary text-white text-center">
+  
     <form>
  		
         <div class="form-outline mb-4">
@@ -48,9 +52,14 @@ function fazer_requsicao(){
 
     
         <button type="button" onclick="fazer_requsicao()" class="btn btn-primary btn-block mb-4">Cadastrar</button>
-      
+        <a href="/form/pagina_login.html" style="color:white">Login</a>
+       
       </form>
 </div>
+
+
+
+
 
 <p>Resutado: <div id="texto_resultado"></div></p>
 </html>
