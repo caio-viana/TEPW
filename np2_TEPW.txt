@@ -1,9 +1,0 @@
-tres primeiras de marcar 
-1 - mysql teórico
-2 - php teórico
-
-soma de variáveis
-comentário
-loop
-criar função
-condicional
